@@ -10,3 +10,7 @@ public:
        return (sum/(size-2));
    }
 };
+
+sum = 0
+sum = 0 + 2000 → sum becomes 2000
+sum = 2000 + 3000 → sum becomes 5000
