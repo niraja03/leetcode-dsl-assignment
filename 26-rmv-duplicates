@@ -12,3 +12,6 @@ public:
         return i+1;
     }
 };
+
+i = 2 → indexes 0,1,2 are unique → total = 2(index)+1 = 3
+ssince we hv started from 0th index
