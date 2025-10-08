@@ -1,149 +1,154 @@
 1. Basics & Traversal (Warm-up)
+Problem	Pattern / Logic Covered
+27. Remove Element	Two pointers → remove specific value in-place
+136. Single Number	XOR trick → find unique element
+217. Contains Duplicate	Hashmap → check duplicates
+219. Contains Duplicate II	Hashmap → duplicates within range
+26. Remove Duplicates from Sorted Array	Already solved (included for reference)
+88. Merge Sorted Array	Already solved (included for reference)
+283. Move Zeroes	Already solved (included for reference)
 
-Remove Duplicates from Sorted Array (26)
+✅ Pattern Recap:
 
-Remove Element (27)
+Two pointers / in-place modification
 
-Merge Sorted Array (88)
+Counting / XOR trick for unique
 
-Move Zeroes (283)
+Handling duplicates
 
-Max Consecutive Ones (485)
+2. Searching / Binary Search Variants
+Problem	Pattern / Logic Covered
+33. Search in Rotated Sorted Array	Binary search + rotation
+34. Find First and Last Position of Element	Binary search → first/last occurrence
+153. Find Minimum in Rotated Sorted Array	Binary search → pivot/minimum
+162. Find Peak Element	Binary search → compare neighbors
+852. Peak Index in Mountain Array	Binary search → peak detection
 
-Single Number (136)
+✅ Pattern Recap:
 
-🔹 2. Searching & Binary Search Variants
+Compare mid vs neighbors
 
-Search in Rotated Sorted Array (33)
+Use sorted halves
 
-Find First and Last Position of Element in Sorted Array (34)
+Variants of binary search
 
-Search Insert Position (35)
+3. Subarray / Subsequence
+Problem	Pattern / Logic Covered
+53. Maximum Subarray (Kadane’s)	Max contiguous sum
+152. Maximum Product Subarray	Track max/min product
+918. Maximum Sum Circular Subarray	Kadane + total sum trick
+560. Subarray Sum Equals K	Prefix sum + hashmap
+209. Minimum Size Subarray Sum	Sliding window → variable length
+974. Subarray Sums Divisible by K	Prefix sum + modulo
 
-Find Minimum in Rotated Sorted Array (153)
+✅ Pattern Recap:
 
-Find Peak Element (162)
+Kadane’s / max sum
 
-Peak Index in a Mountain Array (852)
+Prefix sum + hashmap
 
-🔹 3. Subarray / Subsequence
+Sliding window → fixed/variable
 
-Maximum Subarray (Kadane’s) (53)
+Modulo tricks
 
-Best Time to Buy and Sell Stock (121)
+4. Hashing & Frequency
+Problem	Pattern / Logic Covered
+1. Two Sum	Hashmap → complement lookup
+169. Majority Element	Hashmap / Boyer-Moore
+347. Top K Frequent Elements	Hashmap + heap
+41. First Missing Positive	Index mapping / in-place
+442. Find All Duplicates in an Array	Index marking / in-place
 
-Maximum Product Subarray (152)
+✅ Pattern Recap:
 
-Maximum Sum Circular Subarray (918)
+Hashmaps for counting/checking
 
-Subarray Sum Equals K (560)
+In-place index tricks
 
-Minimum Size Subarray Sum (209)
+5. Sorting & Rearrangement
+Problem	Pattern / Logic Covered
+75. Sort Colors	Three pointers → Dutch National Flag
+287. Find the Duplicate Number	Cycle detection / binary search
+448. Find All Numbers Disappeared in Array	In-place index marking
+268. Missing Number	XOR / sum formula
+324. Wiggle Sort II	Rearrangement → median + interleaving
 
-Subarray Sums Divisible by K (974)
+✅ Pattern Recap:
 
-🔹 4. Hashing & Frequency
+In-place swaps
 
-Two Sum (1)
+Index mapping tricks
 
-Majority Element (169)
+Rearrangement patterns
 
-Top K Frequent Elements (347)
+6. Prefix / Suffix / Running Sum
+Problem	Pattern / Logic Covered
+238. Product of Array Except Self	Prefix & suffix product arrays
+724. Find Pivot Index	Prefix sum comparison
+303. Range Sum Query – Immutable	Prefix sum array
+304. Range Sum Query 2D – Immutable	2D prefix sum
+523. Continuous Subarray Sum	Prefix sum + modulo
 
-Contains Duplicate (217)
+✅ Pattern Recap:
 
-Contains Duplicate II (219)
+Prefix sum → 1D & 2D
 
-First Missing Positive (41)
+Product accumulation
 
-Find All Duplicates in an Array (442)
+Pivot detection
 
-🔹 5. Sorting & Rearrangement
+Modulo tricks
 
-Sort Colors (Dutch National Flag) (75)
+7. Sliding Window
+Problem	Pattern / Logic Covered
+3. Longest Substring Without Repeating Characters	Sliding window → hashmap for chars
+76. Minimum Window Substring	Sliding window → variable size + counts
+239. Sliding Window Maximum	Deque / monotonic queue
+643. Maximum Average Subarray I	Sliding window sum → fixed length
+1004. Max Consecutive Ones III	Sliding window → at most K zeros
+424. Longest Repeating Character Replacement	Sliding window → replace count tracking
 
-Find the Duplicate Number (287)
+✅ Pattern Recap:
 
-Find All Numbers Disappeared in an Array (448)
+Fixed vs variable window
 
-Missing Number (268)
+Character / element counting
 
-First Missing Positive (41) (repeat, very important)
+Deques for max/min
 
-Wiggle Sort II (324)
+8. Matrix (2D arrays)
+Problem	Pattern / Logic Covered
+54. Spiral Matrix	Layer-by-layer traversal
+73. Set Matrix Zeroes	Row/column marking in-place
+79. Word Search	DFS on grid
+240. Search a 2D Matrix II	Binary search on rows/cols
+48. Rotate Image	In-place rotation (transpose + reverse)
+36. Valid Sudoku	Hashmap / row-col-box checks
 
-🔹 6. Prefix / Suffix / Running Sum
+✅ Pattern Recap:
 
-Product of Array Except Self (238)
+2D traversal / layers
 
-Find Pivot Index (724)
+DFS / grid exploration
 
-Range Sum Query – Immutable (303)
+Transpose + reverse
 
-Range Sum Query 2D – Immutable (304)
+🔑 How this set builds your complete array logic
 
-Continuous Subarray Sum (523)
+Basics → Traversal, duplicates, in-place shifts
 
-🔹 7. Sliding Window
+Binary Search → sorted/rotated arrays, peak/min detection
 
-Longest Substring Without Repeating Characters (3)
+Subarray → Kadane, prefix sums, sliding window
 
-Minimum Window Substring (76)
+Hashing → duplicates, missing numbers, frequency counting
 
-Sliding Window Maximum (239)
+Sorting & Rearrangement → Dutch flag, swaps, in-place tricks
 
-Maximum Average Subarray I (643)
+Prefix/Suffix → cumulative sums, products, pivot detection
 
-Max Consecutive Ones III (1004)
+Sliding Window → variable/fixed, max/min, character arrays
 
-Longest Repeating Character Replacement (424)
+Matrix → grid traversal, DFS, rotation, marking
 
-🔹 8. Matrix Problems
-
-Spiral Matrix (54)
-
-Set Matrix Zeroes (73)
-
-Word Search (79)
-
-Search a 2D Matrix II (240)
-
-Rotate Image (48)
-
-Valid Sudoku (36)
-
-🔹 9. Advanced / Hard
-
-Trapping Rain Water (42)
-
-Container With Most Water (11)
-
-Largest Rectangle in Histogram (84)
-
-Maximal Rectangle (85)
-
-Longest Consecutive Sequence (128)
-
-Candy (135)
-
-⚡ Total = 65 problems
-
-✅ Pattern Recap
-
-Basics → Remove, merge, shift, duplicate handling.
-
-Binary Search → Sorted + rotated arrays.
-
-Subarray → Kadane, prefix, sliding window.
-
-Hashing → Duplicates, missing, majority, freq counts.
-
-Sorting / Rearrangement → Dutch flag, missing + extra.
-
-Prefix/Suffix → Range queries, product except self.
-
-Sliding Window → Longest/shortest subarray patterns.
-
-Matrix → Traversals + modifications.
-
-Hard → Water, histogram, rectangle, sequence.
+By completing these easy array problems, you cover all patterns required for interview-level DSA arrays.
