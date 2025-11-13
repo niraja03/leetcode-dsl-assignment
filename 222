@@ -1,0 +1,17 @@
+class Solution {
+private:
+    int count=0;
+    void solve(TreeNode* node)
+    {
+        if(node==nullptr) return;
+        else count++;
+        solve(node->left);
+        solve(node->right);
+    }
+public:
+    int countNodes(TreeNode* root)
+    {
+        solve(root);
+        return count;
+    }
+};
