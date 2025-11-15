@@ -1,111 +1,167 @@
-1. Basics & Traversal (Warm-up) [26, 27, 88, 136, 217, 219, 283]
+Assignment 1 — Marks analysis
 
-Problems:
+Average
 
-26. Remove Duplicates from Sorted Array
-27. Remove Element
-88. Merge Sorted Array
-136. Single Number
-217. Contains Duplicate
-219. Contains Duplicate II
-283. Move Zeroes
+Highest / lowest
 
-2. Searching / Binary Search Variants [33, 34, 153, 162, 852]
+Absent students
 
-Problems:
+Highest frequency
 
-33. Search in Rotated Sorted Array
-34. Find First and Last Position of Element in Sorted Array
-153. Find Minimum in Rotated Sorted Array
-162. Find Peak Element
-852. Peak Index in Mountain Array
+❌ No exact LeetCode match.
 
-3. Subarray / Subsequence [53, 152, 918, 560, 209, 974, 121, 35, 414, 485]
+Closest:
 
-Problems:
+LC 1287 — Element Appearing More Than 25%
 
-53. Maximum Subarray
-152. Maximum Product Subarray
-918. Maximum Sum Circular Subarray
-560. Subarray Sum Equals K
-209. Minimum Size Subarray Sum
-974. Subarray Sums Divisible by K
-121. Best Time to Buy and Sell Stock
-35. Search Insert Position
-414. Third Maximum Number
-485. Max Consecutive Ones
+LC 136 — Single Number
 
-4. Hashing & Frequency [1, 41, 169, 347, 442]
+LC 169 — Majority Element
 
-Problems:
+But still NOT the same.
 
-1. Two Sum
-41. First Missing Positive
-169. Majority Element
-347. Top K Frequent Elements
-442. Find All Duplicates in an Array
+Assignment 2 — Cricket, Badminton, Football (Set operations)
 
-5. Sorting & Rearrangement [75, 268, 287, 324, 448]
+You want:
 
-Problems:
+Intersection
 
-75. Sort Colors
-268. Missing Number
-287. Find the Duplicate Number
-324. Wiggle Sort II
-448. Find All Numbers Disappeared in Array
+Symmetric difference
 
-6. Prefix / Suffix / Running Sum [238, 303, 304, 523, 724]
+Neither
 
-Problems:
+Only cricket & football
 
-238. Product of Array Except Self
-303. Range Sum Query – Immutable
-304. Range Sum Query 2D – Immutable
-523. Continuous Subarray Sum
-724. Find Pivot Index
+Closest LeetCode:
 
-7. Sliding Window [3, 76, 239, 424, 643, 1004]
+LC 349 — Intersection of Two Arrays
 
-Problems:
+LC 350 — Intersection of Two Arrays II
 
-3. Longest Substring Without Repeating Characters
-76. Minimum Window Substring
-239. Sliding Window Maximum
-424. Longest Repeating Character Replacement
-643. Maximum Average Subarray I
-1004. Max Consecutive Ones III
+❌ Not the same.
+LeetCode never asks your exact problem.
 
-8. Matrix (2D arrays) [36, 48, 54, 73, 79, 240]
+Assignment 3 — Linear search / Sentinel search
 
-Problems:
+Closest:
 
-36. Valid Sudoku
-48. Rotate Image
-54. Spiral Matrix
-73. Set Matrix Zeroes
-79. Word Search
-240. Search a 2D Matrix II
+LC 704 — Binary Search (but uses sorted array)
 
+LC 278 — First Bad Version (searching)
 
-✅ Key Notes:
+❌ No LeetCode for simple linear search.
 
-Only arrays (1D & 2D) included.
+Assignment 4 — Binary search + Fibonacci search
 
-Only easy-level problems included.
+Closest:
 
-Covers all beginner patterns:
+LC 704 — Binary Search
 
-Traversal / Two pointers / In-place
+❌ Fibonacci search does not exist on LeetCode.
 
-Binary search variants
+Assignment 5 — Selection Sort / Bubble Sort
 
-Subarray patterns / Kadane / Sliding window
+Closest:
 
-Hashing / Frequency counting
+LC 912 — Sort an Array (but expects optimized sort)
 
-Sorting / Rearrangement / Swaps
+❌ No selection / bubble sort LeetCode problem.
 
-Prefix / Suffix / Running sum
+Assignment 6 — Quick Sort
 
-2D matrix traversal & modification
+Same as above:
+
+LC 912 — Sort an Array
+
+Assignment 7 — Bucket sort on names by length
+
+Closest:
+
+LC 75 — Sort Colors (bucket idea)
+
+LC 451 — Sort Characters by Frequency (bucket sort pattern)
+
+❌ Not the same.
+
+Assignment 8 — Pinnacle Club (Singly Linked List Management)
+
+Add/delete members
+
+Maintain president/secretary
+
+Concatenate lists
+
+Closest:
+
+LC 206 — Reverse Linked List
+
+LC 141 — Detect Cycle
+
+LC 21 — Merge Two Sorted Lists
+
+❌ No LeetCode for “President/Secretary club linked list”.
+
+Assignment 9 — Bookstore Doubly Linked List
+
+Closest:
+
+LC 146 — LRU Cache (uses doubly linked list)
+
+LC 460 — LFU Cache
+
+But logic is completely different.
+
+❌ No LeetCode match.
+
+Assignment 10 — Expression is well parenthesized (Stack)
+
+This one does exist.
+
+✅ Exact LeetCode match:
+LeetCode 20 — Valid Parentheses
+
+Your assignment is basically identical.
+
+Assignment 11 — Undo/Redo using stacks
+
+Closest:
+
+LC 71 — Simplify Path (stack usage)
+
+LC 1003 — Check If Word Is Valid After Substitutions
+
+❌ No exact Undo/Redo problem on LeetCode.
+
+Assignment 12 — Job queue
+
+Closest:
+
+LC 622 — Design Circular Queue
+
+LC 232 — Implement Queue Using Stacks
+
+❌ No job queue exact problem.
+
+Assignment 13 — Printer Round Robin Circular Queue
+
+Closest:
+
+LC 622 — Design Circular Queue
+
+LC 641 — Design Deque
+
+❌ Not the same scenario.
+
+Assignment 14 — Deque using array
+
+Closest:
+
+LC 641 — Design Circular Deque
+
+This one is the nearest match but still not exact.
+
+Assignment 15 — Reverse Linked List using Stack
+✅ Exact LeetCode match:
+LeetCode 206 — Reverse Linked List
+
+You can solve it using stack as an alternative method.
