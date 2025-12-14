@@ -1,0 +1,23 @@
+bool containsNearbyDuplicate(vector<int>& nums, int k) {
+
+    unordered_map<int, int> note;   // notebook
+
+    for (int i = 0; i < nums.size(); i++) {
+
+        // if number already written in notebook
+        if (note.count(nums[i])) {
+
+            int steps = i - note[nums[i]];
+
+            // check if steps are allowed
+            if (steps <= k) {
+                return true;
+            }
+        }
+
+        // write / update position in notebook
+        note[nums[i]] = i;
+    }
+
+    return false;
+}
