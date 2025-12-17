@@ -1,0 +1,17 @@
+class Solution {
+public:
+    int distributeCandies(vector<int>& candyType) {
+
+        int totalCandies = candyType.size();          // total candies
+        int maxEat = totalCandies / 2;                // allowed to eat
+
+        unordered_set<int> types;                     // to store unique types
+        for (int c : candyType) {
+            types.insert(c);
+        }
+
+        int uniqueTypes = types.size();               // count of different types
+
+        return min(maxEat, uniqueTypes);              // best possible answer
+    }
+};
