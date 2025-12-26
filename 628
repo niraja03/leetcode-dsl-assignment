@@ -1,7 +1,7 @@
 class Solution {
 public:
     int maximumProduct(vector<int>& nums) {
-        int max1 = INT_MIN, max2 = INT_MIN, max3 = INT_MIN;
+        int max1 = INT_MIN, max2 = INT_MIN, max3 = INT_MIN; 
         int min1 = INT_MAX, min2 = INT_MAX;
 
         for (int x : nums) {
