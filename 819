@@ -1,0 +1,79 @@
+class Solution {
+public:
+    string mostCommonWord(string paragraph, vector<string>& banned) {
+
+        // Step 1: Make paragraph lowercase
+        for (int i = 0; i < paragraph.length(); i++) {
+            if (paragraph[i] >= 'A' && paragraph[i] <= 'Z') {
+                paragraph[i] = paragraph[i] + 32;
+            }
+        }
+
+        // Step 2: Replace punctuation with space
+        for (int i = 0; i < paragraph.length(); i++) {
+            if (paragraph[i] < 'a' || paragraph[i] > 'z') {
+                paragraph[i] = ' ';
+            }
+        }
+
+        // Arrays to store words and counts
+        string words[1000];
+        int counts[1000];
+        int size = 0;
+
+        string word = "";
+
+        // Step 3: Build words and count
+        for (int i = 0; i <= paragraph.length(); i++) {
+
+            if (i < paragraph.length() && paragraph[i] != ' ') {
+                word += paragraph[i];
+            } 
+            else if (word != "") {
+
+                // Check if word is banned
+                bool isBanned = false;
+                for (int j = 0; j < banned.size(); j++) {
+                    if (word == banned[j]) {
+                        isBanned = true;
+                        break;
+                    }
+                }
+
+                if (!isBanned) {
+                    // Check if word already exists
+                    bool found = false;
+                    for (int k = 0; k < size; k++) {
+                        if (words[k] == word) {
+                            counts[k]++;
+                            found = true;
+                            break;
+                        }
+                    }
+
+                    // New word
+                    if (!found) {
+                        words[size] = word;
+                        counts[size] = 1;
+                        size++;
+                    }
+                }
+
+                word = "";
+            }
+        }
+
+        // Step 4: Find max count
+        int maxCount = 0;
+        string ans = "";
+
+        for (int i = 0; i < size; i++) {
+            if (counts[i] > maxCount) {
+                maxCount = counts[i];
+                ans = words[i];
+            }
+        }
+
+        return ans;
+    }
+};
